@@ -1,0 +1,13 @@
+def main():
+    alpha = 32310901
+    betha = 1729
+    m = 224
+
+    r_old = int(input("please insert an initial value for r: "))
+    for i in range(100):
+        r_new = (alpha * r_old + betha) % m
+        print(r_new)
+        r_old = r_new
+
+if __name__ == "__main__":
+    main()
